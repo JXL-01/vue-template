@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    new page
+    new
   </div>
 </template>
 

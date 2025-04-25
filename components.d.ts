@@ -11,5 +11,6 @@ declare module 'vue' {
     Button: typeof import('primevue/button')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Slider: typeof import('primevue/slider')['default']
   }
 }
