@@ -1,15 +1,12 @@
 <script setup lang="ts">
 const router = useRouter()
-function handleClick() {
-  router.push('/new')
-}
 </script>
 
 <template>
   <div>
     hello world
   </div>
-  <Button @click="handleClick">
+  <Button @click="router.push({ name: 'auth' })">
     click me
   </Button>
 </template>

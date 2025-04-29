@@ -1,10 +1,12 @@
 <script setup lang="ts">
-
+definePage({
+  name: 'auth',
+})
 </script>
 
 <template>
   <div>
-    new
+    auth
   </div>
 </template>
 

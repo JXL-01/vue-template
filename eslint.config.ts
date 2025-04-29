@@ -13,5 +13,6 @@ export default antfu({
       '**/node_modules/**',
       '**/public/**',
       '**/src/assets/**',
+      'typed-router.d.ts',
     ],
 })
