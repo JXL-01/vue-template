@@ -32,6 +32,7 @@ export default defineConfig({
       imports: [
         'vue',
         'pinia',
+        'vue-i18n',
         VueRouterAutoImports,
       ],
     }),

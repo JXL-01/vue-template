@@ -1,3 +1,4 @@
+import type { App } from 'vue'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { routes } from 'vue-router/auto-routes'
@@ -17,3 +18,6 @@ export const router = createRouter({
     }
   },
 })
+export function install(app: App) {
+  app.use(router)
+}

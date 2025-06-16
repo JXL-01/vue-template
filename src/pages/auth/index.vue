@@ -15,6 +15,7 @@ function signInHandle() {
     console.log('error1111', err.message)
   })
 }
+const { t } = useI18n()
 </script>
 
 <template>
@@ -23,6 +24,9 @@ function signInHandle() {
     <Button :disabled="isPending" @click="signInHandle">
       login
     </Button>
+    <div>
+      {{ t('hello') }}
+    </div>
   </div>
 </template>
 
