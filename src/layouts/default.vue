@@ -4,10 +4,10 @@
 
 <template>
   <div class="min-h-[100vh] h-full w-full ">
-    <div>
-      111
-    </div>
-    <router-view />
+    <Header />
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 
