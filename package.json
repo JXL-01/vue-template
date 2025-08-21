@@ -15,6 +15,7 @@
   "dependencies": {
     "@primeuix/themes": "^1.0.3",
     "@tanstack/vue-query": "^5.74.6",
+    "@vueuse/core": "^13.7.0",
     "ofetch": "^1.4.1",
     "pinia": "^3.0.2",
     "primevue": "^4.3.3",

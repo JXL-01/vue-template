@@ -29,12 +29,19 @@ export default defineConfig({
     vue(),
     // vueDevTools(),
     AutoImport({
+      include: [/\.[jt]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
       imports: [
         'vue',
         'pinia',
         'vue-i18n',
+        '@vueuse/core',
         VueRouterAutoImports,
       ],
+      dts: 'src/auto-imports.d.ts',
+      dirs: [
+        'src/composables',
+      ],
+      vueTemplate: true,
     }),
     VueRouter({
 
@@ -43,6 +50,20 @@ export default defineConfig({
 
     }),
     Components({
+      dts: 'src/components.d.ts',
+      dirs: [
+        'src/components',
+      ],
+      extensions: [
+        'vue',
+      ],
+      deep: true,
+      collapseSamePrefixes: true,
+      directoryAsNamespace: true,
+      globs: [
+        'src/components/**/*.vue',
+      ],
+
       resolvers: [
         PrimeVueResolver(),
       ],
