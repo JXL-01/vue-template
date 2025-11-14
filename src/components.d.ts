@@ -8,9 +8,17 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AIDataPanel: typeof import('./components/data-show/AIDataPanel.vue')['default']
+    AssetDataChart: typeof import('./components/data-show/AssetDataChart.vue')['default']
+    AssetDataPanel: typeof import('./components/data-show/AssetDataPanel.vue')['default']
     Button: typeof import('primevue/button')['default']
+    CenterDataPanel: typeof import('./components/data-show/CenterDataPanel.vue')['default']
+    DashboardHeader: typeof import('./components/data-show/DashboardHeader.vue')['default']
+    GaugeChart: typeof import('./components/data-show/GaugeChart.vue')['default']
     Header: typeof import('./components/layout/header.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UserDataPanel: typeof import('./components/data-show/UserDataPanel.vue')['default']
+    UserGrowthChart: typeof import('./components/data-show/UserGrowthChart.vue')['default']
   }
 }

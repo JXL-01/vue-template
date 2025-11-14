@@ -20,5 +20,10 @@ declare module 'vue-router/auto-routes' {
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     'auth': RouteRecordInfo<'auth', '/auth', Record<never, never>, Record<never, never>>,
+    'experiment': RouteRecordInfo<'experiment', '/experiment', Record<never, never>, Record<never, never>>,
+    'experiment-canvas-study': RouteRecordInfo<'experiment-canvas-study', '/experiment/canvas-study', Record<never, never>, Record<never, never>>,
+    'experiment-js-up': RouteRecordInfo<'experiment-js-up', '/experiment/js-up', Record<never, never>, Record<never, never>>,
+    'experiment-sticky': RouteRecordInfo<'experiment-sticky', '/experiment/sticky', Record<never, never>, Record<never, never>>,
+    'interview': RouteRecordInfo<'interview', '/interview', Record<never, never>, Record<never, never>>,
   }
 }
