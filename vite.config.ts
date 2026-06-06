@@ -5,11 +5,12 @@ import autoprefixer from 'autoprefixer'
 import tailwindcss from 'tailwindcss'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
-import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
+
 // import vueDevTools from 'vite-plugin-vue-devtools'
 import Layouts from 'vite-plugin-vue-layouts'
+import { VueRouterAutoImports } from 'vue-router/unplugin'
+import VueRouter from 'vue-router/vite'
 // https://vite.dev/config/
 export default defineConfig({
   css: {
