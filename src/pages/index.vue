@@ -17,6 +17,7 @@ console.log(count.value)
 </script>
 
 <template>
+  <Header />
   <div>
     hello world
   </div>

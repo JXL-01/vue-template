@@ -20,8 +20,3 @@ definePage({
 <style scoped>
 
 </style>
-
-<route lang="yaml">
-  meta:
-    layout: empty
-</route>

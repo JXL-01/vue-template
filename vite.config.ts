@@ -8,7 +8,6 @@ import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
 
 // import vueDevTools from 'vite-plugin-vue-devtools'
-import Layouts from 'vite-plugin-vue-layouts'
 import { VueRouterAutoImports } from 'vue-router/unplugin'
 import VueRouter from 'vue-router/vite'
 // https://vite.dev/config/
@@ -27,6 +26,9 @@ export default defineConfig({
     },
   },
   plugins: [
+    VueRouter({
+
+    }),
     vue(),
     // vueDevTools(),
     AutoImport({
@@ -44,12 +46,7 @@ export default defineConfig({
       ],
       vueTemplate: true,
     }),
-    VueRouter({
 
-    }),
-    Layouts({
-
-    }),
     Components({
       dts: 'src/components.d.ts',
       dirs: [
